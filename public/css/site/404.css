@@ -1,0 +1,29 @@
+.all{   
+    padding: 7em 0em;
+}
+
+.imgBackGround{
+    background-image: url(../../images/site/error404.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 12rem;
+}
+
+.erorr{
+    font-size: 8rem;
+    font-weight: 800;
+    color: var( --font-color);
+}
+.notFound{
+    padding: 2em 0 0 0;
+    font-size: 2rem;
+    font-weight: 700; 
+}
+.desc{
+    padding: 1em 0 2em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}

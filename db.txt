@@ -1,0 +1,163 @@
+Settings:
+    id: unsignedInteger
+    key: string
+    value: text
+
+[CRUD]
+Teacher:
+    id
+    name
+    birthday
+    phone
+    qualification
+
+
+
+[CRUD]
+Experience:
+    id
+    title
+    date: date
+    teacher_id
+
+
+
+[CRUD]
+Student:
+    id
+    name : string
+    birthday : date
+    phone : string
+    qualification : text
+
+
+
+[CRUD]
+Group:
+    id
+    teacher_id
+    group_type_id
+    age_type ('kid','adult') : enum
+
+GroupSubject:
+    id
+    group_id:
+    subject_id:
+
+[ToDo CRUD in group show]
+GroupDay:
+        id
+        group_id
+        from : time
+        to : time
+        day ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') : enum
+
+
+
+[CRUD]
+GroupType:
+    id
+    name : string
+    price : double
+    days_num : int
+
+
+[CRUD]
+Subject:
+    id
+    name: string
+    book: string
+
+***
+    prevent from uploading too large files
+***
+///////////////////////////////////////////////////////////////////////
+Lesson:
+    id
+    subject_id
+    title : text
+    chapters_count: unsignedInteger default(0)
+    from_page: unsignedInteger default(0)
+    to_page: unsignedInteger default(0)
+
+StudentLesson:
+    id
+    student_id
+    lesson_id
+    group_id
+    finished: bool
+    percentage: float default(0) nullable
+    chapters_count:unsignedInteger default(0)
+    last_page_finished: unsignedInteger default(0)
+
+syllabus:
+    id
+    student_lesson_id: unsignedInteger ==> StudentLesson.id
+    from_chapter: unsignedInteger default(0)
+    to_chapter: unsignedInteger default(0)
+    from_page: unsignedInteger default(0)
+    to_page: unsignedInteger default(0)
+    finished: bool default(false)
+    rate: enum('excellent','very good', 'good', 'fail')
+
+
+StudentLessonReview:
+    id
+    student_lesson_id: unsignedInteger ==> StudentLesson.id
+    finished: bool
+    percentage: float default(0) nullable
+    chapters_count:unsignedInteger default(0)
+    last_page_finished: unsignedInteger default(0)
+
+syllabus_review:
+    id
+    student_lesson_review_id: unsignedInteger ==> StudentLessonReview.id
+    from_chapter: unsignedInteger default(0)
+    to_chapter: unsignedInteger default(0)
+    from_page: unsignedInteger default(0)
+    to_page: unsignedInteger default(0)
+    finished: bool default(false)
+    rate: enum('excellent','very good', 'good', 'fail')
+
+///////////////////////////////////////////////////////////////////////
+[CRUD]
+GroupStudent:
+    id
+    student_id
+    group_id
+
+
+Payment:
+    student_id
+    group_id
+    paid : double
+    month ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December') : enum
+
+[CRUD]
+Exam:
+    id
+    group_id
+    subject_id
+    lesson_from => foriegn key on lessons
+    lesson_to => foriegn key on lessons
+
+//ToDo CRUD in Student
+StudentExam:
+    subject_id
+    exam_id
+    degree : float
+
+
+Notes:
+    id: unsignedInteger
+    notable_type:
+    notable_id:
+    auther_id:
+    note: text
+    type: enum('personal','work','social','important')
+    is_favorite: bool
+
+
+we need to give away 10$ a month for each student
+private groups with double the price
+private group is the group with only one student

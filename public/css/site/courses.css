@@ -1,0 +1,135 @@
+.courses
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.courses .course 
+{
+    width: 32%;
+    font-size: 1.2rem;
+    margin-bottom: 3em;
+}
+
+.courses .course img
+{
+    border-radius: 18px;
+}
+.courses .course .photo
+{
+    margin-bottom: 1em;
+}
+
+.courses .course .text
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.courses .course .text h4
+{
+    color: var(--font-color); 
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.courses .course .text h5
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.courses .course .text p
+{
+    padding: 0.2em 0.6em;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--title-color);
+    display: inline;
+}
+
+.courses .course  .s_one p
+{
+    background-color: #FFEBFF;
+}
+
+.courses .course .s_tow p
+{
+    background-color: #DDFFEB;
+}
+
+.courses .course .s_three p
+{
+    background-color: #EBEBFF;
+}
+
+
+
+
+
+
+
+
+
+
+.join-us-container {
+    background-color: var(--color7);
+    background-image: url(../../images/site/image.elementor-container.png);
+    margin: 4em 0em;
+    border-radius: 20px;
+    background-size: cover;  
+    background-position: center right;
+}
+
+.join-us-row {
+    display: flex;
+    width: 100%;
+    padding: 2.5em 3em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-us-row .left, .join-us-row .right {
+    width: 40%;
+}
+
+.join-us-row .right{
+    text-align: right;
+}
+
+.join-us-row .right button {
+    padding: 15px 30px;
+    background-color: var(--blue);
+    font-weight: 600;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.join-us-row .left {
+    text-align: left;
+    color: var(--title-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 780px) {
+ 
+    .courses .course {
+        width: 45%;
+        margin-bottom: 4em;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+
+    .courses .course {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    
+}

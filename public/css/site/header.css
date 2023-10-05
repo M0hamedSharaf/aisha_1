@@ -1,0 +1,25 @@
+
+/* Header */
+.header{
+    background-color:#1B1036;;
+    background-image: url(../../images/site/headerAbout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.header h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 800;
+    margin-left: 3em;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .header h2{
+        margin-left: 0.5em;
+    }
+}

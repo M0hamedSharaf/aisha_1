@@ -1,0 +1,129 @@
+
+
+.main-top nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+}
+
+.main-top nav .logo {
+    width: 125px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.main-top nav ul {
+    display: flex;
+    transition: 1s;
+    align-items: center;
+}
+
+.main-top nav ul li {
+    margin: 0em 1em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.main-top nav ul li a{
+    color: black;
+}
+
+.main-top nav ul .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
+}
+
+.main-top nav ul .dropdown-menu .dropdown-item:first-child{
+    margin-bottom: 1em;
+}
+
+.main-top nav ul .dropdown-menu img{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
+.main-top nav .nav-blanket{
+    position: fixed;
+    width: 0px;
+    height: 0px;
+}
+
+.main-top nav .nav-blanket.active{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blancket);
+    z-index: 998;
+}
+
+.main-top nav .burger{
+    display: none;
+}
+
+.main-top nav ul.active {
+    right: 0px;
+}
+
+nav ul .close-btn{
+    display: none;
+}
+
+@media only screen and (max-width: 930px) {
+    .main-top nav ul {
+        flex-direction: column;
+        position: fixed;
+        background: rgb(100,92,187);
+        background: linear-gradient(0deg,  0%,  99%);
+        background: linear-gradient(0deg, rgba(235,199,230,1) 0%, rgba(100,92,187,1) 99%);
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 250px;
+        align-items: center;
+        padding-top: 2rem;
+        right: -250px;
+        z-index: 999;
+    }
+
+    .main-top nav ul li{
+        margin: 1em 0em;
+        color: white;
+    }
+
+    .main-top nav ul li a{
+        color: white;
+    }
+
+    .main-top nav .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-top nav .burger .line{
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 4px;
+    }
+
+    nav ul .close-btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.5rem;
+        color: var(--color4);
+        cursor: pointer;
+    }
+}

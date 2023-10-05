@@ -1,0 +1,21 @@
+.icon--counter-container .ico-counter-text{
+    font-size: 1.2rem;
+    color: rgb(25,30,58);
+}
+
+.icon--counter-container i{
+    font-size: 2rem;
+    color: rgb(25,30,58);
+}
+
+.icon--counter-container .counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon--counter-container .counter-content{
+    margin: 1em 0em;
+}
+

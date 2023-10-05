@@ -1,0 +1,42 @@
+.prices-section .text-popular {
+    margin-bottom: 4em;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices .price {
+    border: 1px solid var(--border-light);
+    width: 32%;
+    border-radius: 15px;
+    padding: 1.5em 0.5em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.prices .price h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.prices .price .price-value {
+    color: var(--title-color);
+    margin: 0.4em 0em;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.prices .price .desc {
+    color: var(--gray);
+    margin: 2em 0em;
+}
+
+.prices .price.standard {
+    background-color: var(--font-color);
+}
+
+.prices .price.standard h3,
+.prices .price.standard .desc {
+    color: var(--white);
+}

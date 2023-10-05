@@ -1,0 +1,23 @@
+.form-group .input-group .input-group-addon {
+    background-color: #3066BE;
+    color: white;
+}
+.subtitle{
+    display: none !important;
+}
+
+.label-astersc{
+    position: relative;
+}
+.asterisx {
+    height: 0;
+    font-size: 1em;
+    color: #b90d0d;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i{
+    left: 0px !important;
+}

@@ -1,0 +1,121 @@
+.showLessonContainer{
+    overflow: auto;
+}
+
+#show-lesson-con .page{
+    background-color: white;
+}
+
+
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.295);
+  }
+
+.studentLessonMainContainer{
+    margin-bottom: 5em;
+    padding: 1.5em;
+    border-radius: 70px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    height: 700px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.borderPrimary{
+    border: 2px dotted var(--primary);
+}
+
+.borderSuccess{
+    border: 2px dotted var(--success);
+}
+
+.borderPrimary:hover{
+    border: 2px dotted transparent;
+    box-shadow: 0px 0px 40px var(--primary);
+}
+
+.borderSuccess:hover{
+    border: 2px dotted transparent;
+    box-shadow: 0px 0px 40px var(--success);
+}
+
+.studentLessonMainContainer .rotate-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.rotate-inner-active{
+    transform: rotateY(180deg);
+}
+
+.studentLessonMainContainer .rotate-inner .studentLessonContainer .goToReviewButton{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.studentLessonMainContainer .rotate-inner .studentLessonContainerReview .goToLessonButton{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.studentLessonMainContainer .rotate-inner .studentLessonContainerReview{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.studentLessonMainContainer .rotate-inner .studentLessonContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background-color: white;
+}
+
+
+
+
+.nextLessonFromPage,
+.nextLessonToPage,
+.nextLessonToChapter,
+.nextLessonFromChapter,
+.nextLessonFromPageReview,
+.nextLessonToPageReview,
+.nextLessonToChapterReview,
+.nextLessonFromChapterReview{
+    font-size: 1.5rem;
+}
+
+.nextLessonFromPage,
+.nextLessonToPage,
+.nextLessonFromPageReview,
+.nextLessonToPageReview{
+    cursor: pointer;
+}
+
+
+
+#book-canvas{
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+.links--ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+table tbody tr td {
+    text-align: center;
+}
+
+.layout-spacing .widget-content .bio-skill-box .row p {
+    color: black;
+}
+
+.big-checkbox {
+    transform: scale(1.4);
+}
+
+.progressOfSubjectLink .progress {
+    height: 30px;
+}
+
+.avatar-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.component-card_4 {
+    width: 100%;
+}

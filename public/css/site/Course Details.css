@@ -1,0 +1,103 @@
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8em;
+    gap: 2em;
+}
+
+.course-details .main-image img {
+    border-radius: 20px;
+}
+
+.course-details .legendary h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35em;
+    color: var(--font-color);
+    margin: 0.8em 0;
+}
+
+.course-details .right {
+    width: 50%;
+}
+
+.course-details .right .instructor {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.course-details .right .instructor img {
+    max-width: 75px;
+}
+
+.course-details .right .instructor h2 {
+    font-size: 1.1rem;
+}
+
+.course-details .course-properties .row {
+    display: flex;
+    border-bottom: 1px solid var(--border-light);
+    padding: 10px 0;
+}
+
+.course-details .course-properties .row h2 {
+    width: 50%;
+    font-size: 1.3rem;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.lessons {
+    margin-top: 6em;
+}
+
+.lessons h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--title-color);
+}
+
+.lessons h3 {
+    margin: 0.6em 0em;
+}
+
+.lessons .play-icon {
+    display: flex;
+    margin: 1em 0em;
+}
+
+.lessons .play-icon .social {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons .play-icon .social i {
+    margin-left: 1px;
+}
+
+.lessons .play-icon p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1em;
+}
+@media only screen and (max-width: 965px) {
+ 
+    .course-details  {
+        flex-direction: column-reverse;
+        gap: 4em;
+    }
+    .course-details .right {
+        width: 51%;
+    }
+    
+}

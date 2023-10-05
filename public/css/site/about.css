@@ -1,0 +1,187 @@
+.about {
+    display: flex;
+    margin-top: 6em;
+    gap: 2em;
+}
+
+.about .left {
+    width: 55%;
+}
+
+.about .right {
+    width: 35%;
+}
+
+.about .left img {
+    border-radius: 30px;
+}
+
+.about .right h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35em;
+    color: #1B1036;
+    margin-top: .5em;
+}
+
+.left .legend p {
+    margin-top: 0.8em;
+    color: #1B1036;
+    font-family: "Heebo", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.left .legend p span {
+    vertical-align: middle;
+}
+
+.left .legend .number {
+    color: #1B1036;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1130px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about .left,
+    .about .right {
+        width: 100%;
+    }
+
+    .about .right {
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+
+    .about .left .legend .number:nth-child(3) {
+        margin-left: 0.2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.percentages {
+    background-color: var(--title-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 4em;
+    margin: 8em 0em;
+    flex-wrap: wrap;
+}
+
+.percentages .item {
+    width: 16%;
+    position: relative;
+}
+
+.percentages .item img {
+    height: 100px;
+    width: 100px;
+}
+
+.percentages .item .item-par {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 200px;
+}
+
+.percentages .item .item-par h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.percentages .item .item-par h2 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 680px) {
+    .percentages {
+        padding: 0em;
+    }
+
+    .percentages .item {
+        width: 45%;
+        margin: 1em 0em;
+    }
+}
+
+
+
+
+
+.gotech {
+    display: flex;
+}
+
+.gotech .right {
+    width: 50%;
+}
+
+.gotech .left {
+    width: 35%;
+}
+
+.gotech .right img {
+    border-radius: 20px;
+}
+
+.gotech .left {
+    margin-left: 1.5em;
+}
+
+.gotech .left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35em;
+    color: #1B1036;
+    margin-top: .5em;
+}
+
+.gotech .left p {
+    color: #A1A1A9;
+    font-family: "Heebo", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-top: .5em;
+}
+
+@media only screen and (max-width: 1130px) {
+    .gotech {
+        flex-direction: column-reverse;
+    }
+
+    .gotech .right,
+    .gotech .left {
+        width: 100%;
+    }
+
+    .gotech .left {
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+
+}

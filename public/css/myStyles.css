@@ -1,0 +1,132 @@
+.links--ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    max-width: initial;
+}
+
+table tbody tr td {
+    text-align: center;
+}
+
+table tr th {
+    text-align: center;
+}
+
+.layout-spacing .widget-content .bio-skill-box .row p {
+    color: black;
+}
+
+.timeline-alter .editExperienceButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0055FF;
+}
+
+.timeline-alter .item-timeline {
+    position: relative;
+}
+
+.timeline-alter .deleteButton {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+}
+
+.timeline-alter .deleteButton i {
+    color: #dc3545;
+    font-size: 1.5rem;
+}
+
+.big-checkbox {
+    transform: scale(1.4);
+}
+
+.progressOfSubjectLink .progress {
+    height: 30px;
+}
+
+.avatar-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.component-card_4 {
+    width: 100%;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+
+.opacity-0{
+    opacity: 0;
+}
+
+.table tbody tr td{
+    color: #6c757d;
+    font-weight: bold;
+}
+
+#product-table_length{
+    float: right;
+}
+
+.dt-buttons{
+    float: left;
+}
+
+.card-header.card__header__for_tables{
+    background: rgb(25,30,58);
+    background: linear-gradient(270deg, rgba(25,30,58,1) 50%, rgba(25,30,58,0.8015581232492998) 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-header.card__header__for_tables_show_teacher{
+    background: linear-gradient(220deg, #432472 50%, #322c3c 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header.create__form__header{
+    background: rgb(54,115,142);
+    background: linear-gradient(90deg, rgba(54,115,142,0.7063200280112045) 0%, rgba(25,58,32,1) 100%);
+}
+.card-header.home{
+
+/* background: -webkit-linear-gradient(189deg, hsl(229deg 57% 71%) 10%, hsl(231deg 18% 86%) 80%); */
+background: -webkit-linear-gradient(189deg, #25d5e48a 10%, hsl(169deg 33% 46% / 57%) 80%);
+
+}
+
+
+.required-star{
+    color:rgba(246, 14, 14, 0.866)
+}
+
+.card-header.create__form__newLesson{
+    background: linear-gradient(92deg, rgb(7 32 66 / 69%) 0%, rgb(18 16 161) 100%);
+}
+.card-header.create__form__newReview{
+    background: linear-gradient(90deg, rgb(8 44 29 / 71%) 0%, rgb(13 133 39) 100%);
+}
+
+
+
+
+
+
+.group_show_card_scroll{
+    height: 500px;
+    overflow-y: scroll;
+}

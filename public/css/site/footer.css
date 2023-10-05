@@ -1,0 +1,65 @@
+footer{
+    background-color: var(--font-color);
+}
+
+footer .top{
+    padding: 8em 0em;
+}
+
+footer .top h2, footer .top p{
+    color: var(--white);
+}
+
+footer .top p{
+    width: 400px;
+    margin: 1em auto;
+}
+
+footer .top form{
+    margin-top: 3em;
+}
+
+footer .top .input{
+    width: 540px;
+}
+
+footer .top form .buttons{
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 715px) {
+    footer .top .input{
+        width: 350px;
+    }
+}
+
+
+footer .bot{
+    border-top: 1px solid var(--color2);
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+footer .bot .social{
+    display: flex;
+}
+
+footer .bot .social .icon{
+    margin-left: 1em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer .bot .social .icon:hover{
+    background-color: var(--white);
+    color: var(--title-color);
+}
